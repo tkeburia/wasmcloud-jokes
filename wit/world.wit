@@ -1,0 +1,13 @@
+package wasmcloud:jokes;
+
+interface types {
+  record joke {
+    id: string,
+    text: string,
+  }
+}
+
+interface jokes {
+  use types.{joke};
+  request: func() -> joke;
+}

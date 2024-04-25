@@ -9,5 +9,5 @@ interface types {
 
 interface jokes {
   use types.{joke};
-  request: func() -> joke;
+  request: func() -> result<joke, string>;
 }

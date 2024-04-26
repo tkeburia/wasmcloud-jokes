@@ -4,6 +4,7 @@ interface types {
   record joke {
     id: string,
     text: string,
+    source: string,
   }
 }
 
